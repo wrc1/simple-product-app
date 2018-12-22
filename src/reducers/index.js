@@ -1,4 +1,5 @@
 import types from '../types';
+import { combineReducers } from 'redux';
 const songsReducer = () => {
     return [
         {title: 'No Scrubs', duration: '2:15'},
@@ -11,11 +12,18 @@ const songsReducer = () => {
     ]
 }
 
-const selectSongReducer = (state = null, action) => {
+const selectedSongReducer = (state = null, action) => {
     switch(types.SELECT_SONG) {
         case action.type: 
             return action.payload      
         
         default: return state
     }
-}   
+}  
+ 
+const reducers = combineReducers({
+    songs: songsReducer,
+    selectedSong: selectedSongReducer
+})
+
+export default reducers
