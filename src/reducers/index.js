@@ -16,7 +16,6 @@ const selectedSongReducer = (state = null, action) => {
     switch(types.SELECT_SONG) {
         case action.type: 
             return action.payload      
-        
         default: return state
     }
 }  
