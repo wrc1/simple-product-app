@@ -1,0 +1,14 @@
+.product {
+    border: 1px solid #dbdde0;
+    width: fit-content;
+    padding: 5px;
+}
+
+.product .image-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.product .button-container {
+    padding-top: 5px;
+}

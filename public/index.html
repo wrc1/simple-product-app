@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="./appStyle.css">
+
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -20,6 +22,18 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script>
+        const products =  [
+            {id: 1, Name:'Product1', Description : 'good product1', price: 100},
+            {id: 2, Name:'Product2', Description : 'good product2', price: 101},
+            {id: 3, Name:'Product3', Description : 'good product3', price: 102},
+            {id: 4, Name:'Product4', Description : 'good product4', price: 103},
+            {id: 5, Name:'Product5', Description : 'good product5', price: 104},
+            {id: 6, Name:'Product6', Description : 'good product6', price: 105},
+            {id: 7, Name:'Product7', Description : 'good product7', price: 106},
+        ]
+        localStorage.setItem("products", JSON.stringify(products));
+      </script>
     <title>React App</title>
   </head>
   <body>

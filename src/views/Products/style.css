@@ -1,0 +1,12 @@
+.products {
+
+}
+
+.products .products-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products .products-list > .item {
+    padding: 5px 5px;
+}
